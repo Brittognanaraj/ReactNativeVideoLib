@@ -8,7 +8,7 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 
 public class VideoViewManager extends SimpleViewManager<VideoCustomView> {
 
-     @ReactProp(name = "sourceUrl")
+    @ReactProp(name = "sourceUrl")
     public void setSourceUrlProp(VideoCustomView view, String sourceUrl) {
         view.setSourceUrl(sourceUrl);
     }

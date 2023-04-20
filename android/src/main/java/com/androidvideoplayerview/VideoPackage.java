@@ -13,17 +13,17 @@ import java.util.List;
 
 public class VideoPackage implements ReactPackage {
 
-  @NonNull
-  @Override
-  public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactApplicationContext) {
-    ArrayList<NativeModule> list = new ArrayList<NativeModule>();
-    // list.add(((new MyViewModule(reactApplicationContext))));
-    return list;
-  }
+    @NonNull
+    @Override
+    public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactApplicationContext) {
+        ArrayList<NativeModule> list = new ArrayList<NativeModule>();
+        // list.add(((new MyViewModule(reactApplicationContext))));
+        return list;
+    }
 
-  @NonNull
-  @Override
-  public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactApplicationContext) {
-    return Arrays.<ViewManager>asList(new VideoViewManager());
-  }
+    @NonNull
+    @Override
+    public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactApplicationContext) {
+        return Arrays.<ViewManager>asList(new VideoViewManager());
+    }
 }

@@ -9,3 +9,4 @@ type AndroidVideoViewType = {
 const {AndroidVideoViews} = NativeModules;
 
 export default AndroidVideoViews as AndroidVideoViewType;
+
