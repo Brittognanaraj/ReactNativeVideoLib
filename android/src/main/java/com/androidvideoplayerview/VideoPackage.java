@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class VideoPackage implements ReactPackage {
+public class VideoPackage implements ReactPackage {
 
   @NonNull
   @Override
