@@ -5,11 +5,11 @@ interface NativeComponentProps {
   sourceUrl: String;
 }
 
-export const AndroidVideoView =
+export const CustomAndroidVideoView =
   requireNativeComponent<NativeComponentProps>('VideoView');
 
-type CustomWebViewProps = ViewProps & NativeComponentProps;
+type AndroidVideoViewProps = ViewProps & NativeComponentProps;
 
-export const CustomWebView: React.FC<CustomWebViewProps> = props => {
-  return <AndroidVideoView {...props} />;
+export const AndroidVideoView: React.FC<AndroidVideoViewProps> = props => {
+  return <CustomAndroidVideoView {...props} />;
 };
