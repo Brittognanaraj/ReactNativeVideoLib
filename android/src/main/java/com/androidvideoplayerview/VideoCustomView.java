@@ -25,7 +25,7 @@ public class VideoCustomView extends LinearLayout {
 
     private void updateRandomNumberLabel() {
         WebView webView=findViewById(R.id.webview);
-        webView.loadUrl('https://prdcusswlapisa.blob.core.windows.net/video/video_welcome_organic(1080p).mp4');
+        webView.loadUrl("https://prdcusswlapisa.blob.core.windows.net/video/video_welcome_organic(1080p).mp4");
 //        TextView randomNumberLabel = findViewById(R.id.randomNumber);
 //        randomNumberLabel.setText("" + this.number);
     }
