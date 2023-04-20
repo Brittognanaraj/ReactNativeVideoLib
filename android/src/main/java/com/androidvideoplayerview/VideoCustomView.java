@@ -18,12 +18,12 @@ public class VideoCustomView extends LinearLayout {
         init();
     }
 
-    public void setInitialNumber(String videoUrl) {
+    public void setSourceUrl(String videoUrl) {
         this.url = videoUrl;
-        this.updateRandomNumberLabel();
+        this.updateWebview();
     }
 
-    private void updateRandomNumberLabel() {
+    private void updateWebview() {
         WebView webView=findViewById(R.id.webview);
         webView.loadUrl(this.url);
 

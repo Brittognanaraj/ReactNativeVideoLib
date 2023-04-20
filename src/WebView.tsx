@@ -2,17 +2,14 @@ import React from 'react';
 import {requireNativeComponent, ViewProps} from 'react-native';
 
 interface NativeComponentProps {
-    initialNumber:number;
+  sourceUrl: String;
 }
 
-export const AndroidVideoView = requireNativeComponent<NativeComponentProps>(
-  'VideoView',
-);
+export const AndroidVideoView =
+  requireNativeComponent<NativeComponentProps>('VideoView');
 
 type CustomWebViewProps = ViewProps & NativeComponentProps;
 
-export const CustomWebView: React.FC<
-CustomWebViewProps
-> = (props) => {
+export const CustomWebView: React.FC<CustomWebViewProps> = props => {
   return <AndroidVideoView {...props} />;
 };

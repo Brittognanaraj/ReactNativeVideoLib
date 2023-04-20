@@ -8,9 +8,9 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 
 public class VideoViewManager extends SimpleViewManager<VideoCustomView> {
 
-    @ReactProp(name = "initialNumber")
-    public void setInitialNumberProp(VideoCustomView view, String initialNumber) {
-        view.setInitialNumber(initialNumber);
+     @ReactProp(name = "sourceUrl")
+    public void setSourceUrlProp(VideoCustomView view, String sourceUrl) {
+        view.setSourceUrl(sourceUrl);
     }
 
     @NonNull
