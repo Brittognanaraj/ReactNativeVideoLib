@@ -11,7 +11,7 @@ import com.facebook.react.uimanager.ThemedReactContext;
 public class VideoCustomView extends LinearLayout {
     ThemedReactContext myContext;
     String url = "";
-
+ WebView webView=null;
     public VideoCustomView(ThemedReactContext context) {
         super(context);
         this.myContext = context;
@@ -24,14 +24,16 @@ public class VideoCustomView extends LinearLayout {
     }
 
     private void updateRandomNumberLabel() {
-        WebView webView=findViewById(R.id.webview);
-        webView.loadUrl("https://prdcusswlapisa.blob.core.windows.net/video/video_welcome_organic(1080p).mp4");
+        // WebView webView=findViewById(R.id.webview);
+        // webView.loadUrl("https://prdcusswlapisa.blob.core.windows.net/video/video_welcome_organic(1080p).mp4");
 //        TextView randomNumberLabel = findViewById(R.id.randomNumber);
 //        randomNumberLabel.setText("" + this.number);
     }
 
     private void init() {
         View layoutInflate = inflate(myContext, R.layout.generator_layout, this);
+          WebView webView=layoutInflate.findViewById(R.id.webview);
+        webView.loadUrl("https://prdcusswlapisa.blob.core.windows.net/video/video_welcome_organic(1080p).mp4");
 //        Button randomNumberButton=layoutInflate.findViewById(R.id.randomButton);
 //        randomNumberButton.setOnClickListener {
 //            this.number=(0 until 100).shuffled().last()
