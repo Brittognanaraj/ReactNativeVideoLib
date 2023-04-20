@@ -16,7 +16,7 @@ public class VideoViewManager extends SimpleViewManager<VideoCustomView> {
     @NonNull
     @Override
     public String getName() {
-        return "VideoView";
+        return "VideoCustomView";
     }
 
     @NonNull

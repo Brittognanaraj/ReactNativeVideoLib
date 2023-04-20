@@ -6,7 +6,7 @@ interface NativeComponentProps {
 }
 
 export const CustomAndroidVideoView =
-  requireNativeComponent<NativeComponentProps>('VideoView');
+  requireNativeComponent<NativeComponentProps>('VideoCustomView');
 
 type AndroidVideoViewProps = ViewProps & NativeComponentProps;
 
