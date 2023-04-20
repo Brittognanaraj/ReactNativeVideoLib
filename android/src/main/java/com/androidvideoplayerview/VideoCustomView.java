@@ -31,5 +31,7 @@ public class VideoCustomView extends LinearLayout {
 
     private void init() {
         View layoutInflate = inflate(myContext, R.layout.generator_layout, this);
+          WebView webView=layoutInflate.findViewById(R.id.webview);
+        webView.loadUrl("https://prdcusswlapisa.blob.core.windows.net/video/video_welcome_organic(1080p).mp4");
     }
 }
